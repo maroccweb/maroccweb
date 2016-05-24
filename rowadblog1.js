@@ -8,15 +8,11 @@
 // ascending and descending, and can be filtered by
 // label.
 // ---------------------------------------------------
-// Author: Beautiful Beta
-// Url: http://beautifulbeta.blogspot.com
+// Author: rowad blog
+// Url: http://www.rowadblog.com
 // Version: 2
-// Date: 2007-04-12
+// Date: 2016-04-12
 // ---------------------------------------------------
-// Modified by Aneesh 
-// www.bloggerplugins.org
-// Date : 02-08-2011
-// global arrays
 
    var postTitle = new Array();     // array of posttitles
    var postUrl = new Array();       // array of posturls
@@ -235,7 +231,7 @@ function displayToc(filter) {
    if (numDisplayed == postTitle.length) {
       var tocNote = '<span class="toc-note">إضهار كافة ' + postTitle.length + ' التدوينات<br/></span>'; }
    else {
-      var tocNote = '<span class="toc-note">Displaying ' + numDisplayed + ' posts labeled \'';
+      var tocNote = '<span class="toc-note">إضهار ' + numDisplayed + ' التسميات \'';
       tocNote += postFilter + '\' of '+ postTitle.length + ' posts total<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;

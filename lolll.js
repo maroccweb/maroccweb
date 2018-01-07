@@ -48,10 +48,10 @@ var firstTimePageRefereshed = 1;
             userSubmittedNumber = "";
             drawInProgress();
             if(phpToJsData.isLoggedIn && (previousState == 2 || previousState == 3)) {
-                var timerInfoReload = Math.floor(Math.random() * 4000) + 1000;
+                var timerInfoReload = Math.floor(Math.random() * 2000) + 1000;
                 setTimeout(function(){
                     var valueInTmr = parseInt($('.timer-count').text());
-                    if(valueInTmr == 0 || valueInTmr < 10 || isNaN(valueInTmr)) {
+                    if(valueInTmr == 0 || valueInTmr < 5 || isNaN(valueInTmr)) {
                         location.reload();
                     } else {
                         previousState = 0;
